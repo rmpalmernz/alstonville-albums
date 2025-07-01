@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Availability List - Plant Collection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Raleway', sans-serif; background: #f9f9f9; color: #333; line-height: 1.6; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 20px; background: white; min-height: 100vh; }
+    .header { text-align: center; margin-bottom: 40px; padding: 40px 20px; background: linear-gradient(135deg, #446d4d15, #446d4d05); border-radius: 12px; }
+    .title { font-size: 2.5rem; font-weight: 700; color: #446d4d; margin-bottom: 16px; }
+    .subtitle { font-size: 1.2rem; color: #666; margin-bottom: 24px; }
+    .photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; margin-bottom: 40px; }
+    .photo-card { background: white; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.2s; }
+    .photo-card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+    .photo-card img { width: 100%; height: 250px; object-fit: cover; }
+    .photo-details { padding: 20px; }
+    .photo-details h3 { font-size: 1.2rem; font-weight: 600; color: #446d4d; margin-bottom: 8px; }
+    .photo-details p { font-size: 0.9rem; color: #666; margin-bottom: 8px; }
+    .price { font-size: 1.1rem; font-weight: 600; color: #333; }
+    .stock-status { padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: 500; display: inline-block; }
+    .in-stock { background: #dcfce7; color: #166534; }
+    .coming-soon { background: #fef3c7; color: #92400e; }
+    .out-of-stock { background: #fee2e2; color: #991b1b; }
+    .cta { text-align: center; padding: 40px 20px; background: #446d4d10; border-radius: 12px; margin-bottom: 40px; }
+    .cta h2 { font-size: 2rem; font-weight: 600; color: #446d4d; margin-bottom: 16px; }
+    .cta p { font-size: 1.1rem; color: #666; margin-bottom: 24px; }
+    .cta-button { display: inline-block; padding: 16px 32px; background: #446d4d; color: white; text-decoration: none; border-radius: 8px; font-size: 1.1rem; font-weight: 600; }
+    .footer { text-align: center; padding: 40px 20px; border-top: 1px solid #e5e7eb; color: #666; font-size: 0.9rem; }
+    @media (max-width: 768px) { .title { font-size: 2rem; } .photo-grid { grid-template-columns: 1fr; gap: 16px; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Weekly Availability List</h1>
+      <p class="subtitle">Curated for Other Customer Production Only</p>
+      <div>📸 14 photos featured</div>
+    </div>
+    
+    <div class="photo-grid">
+      
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/9240c610-7127-4446-b3b5-21d82a2b9159/uc_1751198899325.jpg" alt="Acer palmatum (Japanese Maple) XG" loading="lazy">
+      <div class="photo-details">
+        <h3>Acer palmatum (Japanese Maple) XG</h3>
+        <p>SKU: APTXG</p>
+        <p class="price">POA</p>
+        <span class="stock-status out-of-stock">Out of Stock</span>
+      </div>
+    </div>
+  
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/48f9b940-7150-4acd-a331-58c876edaae0/uc_1751200258293.jpg" alt="Archontophoenix cunninghamiana (Bangalow palm) 200mm" loading="lazy">
+      <div class="photo-details">
+        <h3>Archontophoenix cunninghamiana (Bangalow palm) 200mm</h3>
+        <p>SKU: B200</p>
+        <p class="price">10.5</p>
+        <span class="stock-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/e2abfd1a-1243-4327-8e24-38cace9bb226/uc_1751200282353.jpg" alt="Aspidistra elatior 200mm" loading="lazy">
+      <div class="photo-details">
+        <h3>Aspidistra elatior 200mm</h3>
+        <p>SKU: AS200</p>
+        <p class="price">14.7</p>
+        <span class="stock-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/605a450f-6a58-4fe6-aa86-fba5433243a6/Download_1751114599349.jpg" alt="Asplenium nidus 200mm" loading="lazy">
+      <div class="photo-details">
+        <h3>Asplenium nidus 200mm</h3>
+        <p>SKU: AN200</p>
+        <p class="price">12.1</p>
+        <span class="stock-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/48f9b940-7150-4acd-a331-58c876edaae0/Download_1751114536809.jpg" alt="Archontophoenix cunninghamiana (Bangalow palm) 200mm" loading="lazy">
+      <div class="photo-details">
+        <h3>Archontophoenix cunninghamiana (Bangalow palm) 200mm</h3>
+        <p>SKU: B200</p>
+        <p class="price">10.5</p>
+        <span class="stock-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/e2abfd1a-1243-4327-8e24-38cace9bb226/uc_1751198912442.jpg" alt="Aspidistra elatior 200mm" loading="lazy">
+      <div class="photo-details">
+        <h3>Aspidistra elatior 200mm</h3>
+        <p>SKU: AS200</p>
+        <p class="price">14.7</p>
+        <span class="stock-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/605a450f-6a58-4fe6-aa86-fba5433243a6/uc_1751198887315.jpg" alt="Asplenium nidus 200mm" loading="lazy">
+      <div class="photo-details">
+        <h3>Asplenium nidus 200mm</h3>
+        <p>SKU: AN200</p>
+        <p class="price">12.1</p>
+        <span class="stock-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/48f9b940-7150-4acd-a331-58c876edaae0/uc_1751198946626.jpg" alt="Archontophoenix cunninghamiana (Bangalow palm) 200mm" loading="lazy">
+      <div class="photo-details">
+        <h3>Archontophoenix cunninghamiana (Bangalow palm) 200mm</h3>
+        <p>SKU: B200</p>
+        <p class="price">10.5</p>
+        <span class="stock-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/e2abfd1a-1243-4327-8e24-38cace9bb226/uc_1751198919672.jpg" alt="Aspidistra elatior 200mm" loading="lazy">
+      <div class="photo-details">
+        <h3>Aspidistra elatior 200mm</h3>
+        <p>SKU: AS200</p>
+        <p class="price">14.7</p>
+        <span class="stock-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/605a450f-6a58-4fe6-aa86-fba5433243a6/uc_1751198894046.jpg" alt="Asplenium nidus 200mm" loading="lazy">
+      <div class="photo-details">
+        <h3>Asplenium nidus 200mm</h3>
+        <p>SKU: AN200</p>
+        <p class="price">12.1</p>
+        <span class="stock-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/48f9b940-7150-4acd-a331-58c876edaae0/uc_1751198942399.jpg" alt="Archontophoenix cunninghamiana (Bangalow palm) 200mm" loading="lazy">
+      <div class="photo-details">
+        <h3>Archontophoenix cunninghamiana (Bangalow palm) 200mm</h3>
+        <p>SKU: B200</p>
+        <p class="price">10.5</p>
+        <span class="stock-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/e2abfd1a-1243-4327-8e24-38cace9bb226/uc_1751198906719.jpg" alt="Aspidistra elatior 200mm" loading="lazy">
+      <div class="photo-details">
+        <h3>Aspidistra elatior 200mm</h3>
+        <p>SKU: AS200</p>
+        <p class="price">14.7</p>
+        <span class="stock-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/e2abfd1a-1243-4327-8e24-38cace9bb226/uc_1751198924593.jpg" alt="Aspidistra elatior 200mm" loading="lazy">
+      <div class="photo-details">
+        <h3>Aspidistra elatior 200mm</h3>
+        <p>SKU: AS200</p>
+        <p class="price">14.7</p>
+        <span class="stock-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  
+    <div class="photo-card">
+      <img src="https://slovwxualmrlywwvqnps.supabase.co/storage/v1/object/public/plant-images/e2abfd1a-1243-4327-8e24-38cace9bb226/Download_1751114975152.jpg" alt="Aspidistra elatior 200mm" loading="lazy">
+      <div class="photo-details">
+        <h3>Aspidistra elatior 200mm</h3>
+        <p>SKU: AS200</p>
+        <p class="price">14.7</p>
+        <span class="stock-status coming-soon">Coming Soon</span>
+      </div>
+    </div>
+  
+    </div>
+    
+    <div class="cta">
+      <h2>Interested in These Plants?</h2>
+      <p>Contact us to discuss availability, pricing, and delivery options for your selection.</p>
+      <a href="mailto:orders@alstonvilleplants.com.au?subject=Inquiry about Weekly Availability List" class="cta-button">Get Quote & Order</a>
+    </div>
+    
+    <div class="footer">
+      <p>This private album link will expire in 30 days. Contact us if you need extended access or have any questions.</p>
+    </div>
+  </div>
+  
+  
+    <script>
+      // Tracking and expiry logic
+      const urlParams = new URLSearchParams(window.location.search);
+      const accessCode = urlParams.get('access_code');
+      const expiresAt = new Date("2025-07-31T10:55:33.269Z");
+      
+      // Check expiry
+      if (new Date() > expiresAt) {
+        document.body.innerHTML = "<div style='text-align: center; padding: 50px; font-family: Arial, sans-serif;'><h2>This album has expired</h2><p>Contact us for updated availability.</p></div>";
+      }
+      
+      // Log access
+      if (accessCode) {
+        fetch("https://slovwxualmrlywwvqnps.supabase.co/functions/v1/log-access", {
+          method: "POST",
+          headers: { 
+            "Content-Type": "application/json",
+            "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNsb3Z3eHVhbG1ybHl3d3ZxbnBzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMwNzE1MTgsImV4cCI6MjA1ODY0NzUxOH0.pTC-hAlBu8naS9tj3oihZR31rN9hVtk2ng35JGhCpP0"
+          },
+          body: JSON.stringify({
+            album: window.location.pathname,
+            access_code: accessCode,
+            user_agent: navigator.userAgent,
+            timestamp: new Date().toISOString(),
+            referrer: document.referrer
+          })
+        }).catch(console.error);
+      }
+    </script>
+  
+  
+</body>
+</html>
