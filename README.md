@@ -20,17 +20,17 @@ This site is automatically deployed using [Vercel](https://vercel.com).
 ### Public URL Format:
 Each album page is hosted at:
 ```
-https://alstonville-albums.vercel.app/[filename].html
+https://albums.alstonvilleplants.com.au/[filename].html
 ```
 
 Examples:
-- Weekly Availability: https://alstonville-albums.vercel.app/weekly-availability.html
-- Hoya Range: https://alstonville-albums.vercel.app/hoya-range.html
+- Weekly Availability: https://albums.alstonvilleplants.com.au/weekly-availability.html
+- Hoya Range: https://albums.alstonvilleplants.com.au/hoya-range.html
 
 ## 🧠 How to Use
 
 1. Add new `.html` album files to the root directory
-2. Commit and push to `main` branch
+2. Commit and push to the `main` branch
 3. Vercel auto-deploys and serves your updated album pages
 
 ## 📸 Image Hosting
@@ -45,7 +45,7 @@ Each HTML album should reference full public Supabase URLs for reliability.
 
 ## 🔒 Access Control (optional)
 
-While pages are public, each album includes:
+While pages are public, each album may include:
 
 - Tokenised URLs (if needed)
 - Expiry date messaging (e.g. “This page expires in 30 days”)
